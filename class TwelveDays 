@@ -1,0 +1,136 @@
+class TwelveDays {
+2
+    String verse(int verseNumber) {
+3
+         if (verseNumber == 1) {
+4
+5
+            return "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.\n";
+6
+7
+        } else if (verseNumber == 2) {
+8
+9
+            return "On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.\n";
+10
+11
+        } else if (verseNumber == 3) {
+12
+13
+            return "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+14
+15
+        } else if (verseNumber == 4) {
+16
+17
+            return "On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+18
+19
+        } else if (verseNumber == 5) {
+20
+21
+            return "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+22
+        } else if (verseNumber == 6) {
+23
+24
+            return "On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+25
+26
+        } else if (verseNumber == 7) {
+27
+28
+            return "On the seventh day of Christmas my true love gave to me: seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+29
+30
+        } else if (verseNumber == 8) {
+31
+32
+            return "On the eighth day of Christmas my true love gave to me: eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+33
+34
+        } else if (verseNumber == 9) {
+35
+36
+            return "On the ninth day of Christmas my true love gave to me: nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+37
+38
+        } else if (verseNumber == 10) {
+39
+40
+            return "On the tenth day of Christmas my true love gave to me: ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+41
+42
+        } else if (verseNumber == 11) {
+43
+            return "On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+44
+45
+        } else if (verseNumber == 12) {
+46
+47
+            return "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.\n";
+48
+49
+        }
+50
+51
+        return "";
+52
+53
+    }
+54
+55
+56
+    String verses(int startVerse, int endVerse) {
+57
+58
+        String returnString = "";
+59
+60
+        for (int i = startVerse; i < endVerse; i++) {
+61
+62
+            returnString += verse(i) + "\n";
+63
+64
+        }
+65
+66
+        returnString += verse(endVerse);
+67
+68
+        return returnString;
+69
+70
+    }
+71
+72
+    
+73
+74
+    String sing() {
+75
+76
+        String returnString = "";
+77
+78
+        for (int i = 1; i < 12; i++) {
+79
+80
+            returnString += verse(i) + "\n";
+81
+82
+        }
+83
+84
+        returnString += verse(12);
+85
+86
+        return returnString;
+87
+88
+    }
+89
+90
+}
