@@ -1,0 +1,65 @@
+class RnaTranscription {
+2
+3
+    String transcribe(String dnaStrand) {
+4
+      String newStr = "";
+5
+6
+        for (char c : dnaStrand.toCharArray()) {
+7
+8
+            newStr += translateRna(c);
+9
+10
+        }
+11
+12
+        return newStr;
+13
+14
+    }
+15
+16
+17
+    char translateRna(char c) {
+18
+19
+        switch(c) {
+20
+21
+            case 'G':
+22
+23
+                return 'C';
+24
+            case 'C':
+25
+26
+                return 'G';
+27
+28
+            case 'T':
+29
+30
+                return 'A';
+31
+32
+            case 'A':
+33
+34
+                return 'U';
+35
+36
+            default:
+37
+38
+                return 'X';
+39
+40
+        }
+41
+42
+    }
+43
+}
